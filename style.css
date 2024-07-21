@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --soft-red: #ec775f;
+  --cyan: rgb(118, 181, 188);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --pale-orange: hsl(30, 100%, 98%);
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--pale-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  min-width: 320px;
+  max-width: 500px;
+  margin-inline: 0.5rem;
+}
+
+.balance {
+  flex: 1;
+  color: white;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--soft-red);
+  padding: 2rem;
+}
+
+.balance-text {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.chart {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-top: 1.25rem;
+}
+
+.chart .chart-title {
+  margin: 0.5rem 0 2.5rem 0;
+  font-size: 1.75rem;
+  color: var(--dark-brown);
+}
+
+.divider {
+  border-top: 1px solid var(--medium-brown);
+  margin: 1.25rem 0;
+}
+
+.this-month {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
+}
+
+.this-month-text {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.this-month-text p {
+  color: #c5c1c1;
+}
+
+.this-month-text h2 {
+  color: var(--dark-brown);
+  font-size: 2.5rem;
+}
+
+.this-month-change {
+  display: grid;
+  gap: 0.2rem;
+  text-align: right;
+}
+
+.this-month-interest {
+  color: var(--dark-brown);
+  font-weight: 700;
+}
+
+.this-month-label {
+  color: var(--medium-brown);
+}
